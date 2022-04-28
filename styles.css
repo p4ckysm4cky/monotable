@@ -61,6 +61,12 @@ body {
     user-select: none;
 }
 
+.slotHeader {
+    opacity: 1;
+    height: 20px;
+    cursor: move;
+}
+
 .slotBreak {
     background-color: var(--greenBlue-color);
     color: white;
@@ -76,7 +82,3 @@ body {
     color: white;
 }
 
-.slotHeader {
-    opacity: 1;
-    height: 20px;
-}
