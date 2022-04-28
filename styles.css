@@ -1,0 +1,12 @@
+#page {
+    display: flex;
+}
+
+th {
+    width: 150px;
+    height: 30px;
+}
+
+th {
+    border: 1px solid;
+}
