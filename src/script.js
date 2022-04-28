@@ -21,10 +21,10 @@ function toTwelveHour(number) {
     // check if am or pm 
     let return_str = new_num + ":00";
     if (number <= 11 || number == 24) {
-        return_str += " AM";
+        return_str += " am";
     }
     else {
-        return_str += " PM";
+        return_str += " pm";
     }
     return return_str;
 }
@@ -46,8 +46,6 @@ function makeRow(str_time) {
 
 
 function main() {
-    // let test = makeRow("8:00");
-    // timetable_table.appendChild(test);
     makeTable();
 }
 
