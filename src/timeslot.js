@@ -119,6 +119,13 @@ function addTimeSlot(text, type) {
 
     timeslot.appendChild(header);
     timeslot.append(text);
+
+    // ctrl + click = delete
+    timeslot.addEventListener("click", (e) => {
+        if (e.ctrlKey) {
+            e.target.remove();
+        }
+    })
     divPage.appendChild(timeslot);
     dragElement(timeslot);
 }
