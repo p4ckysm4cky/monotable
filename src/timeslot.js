@@ -126,6 +126,13 @@ function addTimeSlot(text, type) {
             e.target.remove();
         }
     })
+
+    // shift + click = create
+    timeslot.addEventListener("click",  (e) => {
+        if (e.shiftKey) {
+            addTimeSlot(text, type);
+        }
+    })
     divPage.appendChild(timeslot);
     dragElement(timeslot);
 }

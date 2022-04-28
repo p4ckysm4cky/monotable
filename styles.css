@@ -38,16 +38,16 @@ body {
 
 .RHS {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
     width: 50%;
 }
 
 .timeslot {
-    width: 100px;
-    height: 100px;
+    width: 203.98px;
+    height: 53.98px;
     position: absolute;
-    resize: both;
+    resize: vertical;
     overflow: auto;
     text-align: center;
     opacity: 0.9;

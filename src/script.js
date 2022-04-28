@@ -5,8 +5,8 @@ const timetable_table = document.getElementById("timetable");
  * Injects a table with time into index.html
  */
 function makeTable() {
-    for (let i = 7; i <= 24; i++) {
-        let newRow = makeRow(toTwelveHour(i));
+    for (let i = 7; i <= 23; i++) {
+        let newRow = makeRow(toTwelveHour(i) + " → " + toTwelveHour(i+1));
         timetable_table.appendChild(newRow);
     }
 }
@@ -20,7 +20,7 @@ function toTwelveHour(number) {
     let new_num = (number + 11) % 12 + 1;
     // check if am or pm 
     let return_str = new_num + ":00";
-    if (number <= 11 || number == 24) {
+    if (number % 24 < 12) {
         return_str += " am";
     }
     else {
