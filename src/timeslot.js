@@ -123,7 +123,7 @@ function addTimeSlot(text, type) {
     // ctrl + click = delete
     timeslot.addEventListener("click", (e) => {
         if (e.ctrlKey) {
-            e.target.remove();
+            timeslot.remove();
         }
     })
 
